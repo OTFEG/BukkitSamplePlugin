@@ -9,7 +9,7 @@ gradle-app.setting
 !gradle-wrapper.jar
 
 *.class
-
+*~
 # Package Files #
 *.jar
 *.war
