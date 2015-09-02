@@ -8,7 +8,7 @@ group = 'net.otfeg.bukkitsampleplugin'
 //the same as Maven artifactID. This will be used as base for jar name. Usually the same as plugin name
 archivesBaseName = 'BukkitSamolePlugin'
 //Plugin version. "-SNAPSHOT" at the end is reserved for development versions.
-version = '1.8.3'
+version = '1.8.8'
 
 //If you set it to true it will not ask you to accept Minecraft eula. it will accept it autoomatically.
 //by changing it to true you accept Minecraft eula
@@ -190,9 +190,6 @@ repositories {
     mavenLocal()//to allow craftbukkit/spigot server builds for testing
     
     maven {
-	url 'http://nexus.theyeticave.net/content/repositories/pub_releases/'
-    }
-    maven {
         url 'https://hub.spigotmc.org/nexus/content/groups/public/'
     }
 }
@@ -205,12 +202,8 @@ dependencies {
     //compile group: 'org.spigotmc', name: 'spigot-api', version: BUKKIT_VERSION
     //other libraries here
     
-    compile group: 'net.milkbowl.vault', name: 'Vault', version: '1.5.4' 
-
     //Craftbukkit server
     //runtime files('run/spigot-1.8.3.jar')//for custom jar
     runtime group: 'org.bukkit', name: 'craftbukkit', version: BUKKIT_VERSION
     //runtime group: 'org.spigotmc', name: 'spigot', version:  BUKKIT_VERSION
-    runtime group: 'net.milkbowl.vault', name: 'Vault', version: '1.5.4'
-    	
 }
